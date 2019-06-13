@@ -1,0 +1,26 @@
+{
+  "name": "scrapper_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "apify": "^0.14.15",
+    "apify-cli": "^0.3.10",
+    "babel": "^6.23.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "rimraf": "^2.6.3",
+    "util": "^0.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "del": "rimraf apify_storage/* && apify run",
+    "headless": "export APIFY_HEADLESS=1 && npm run del"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4"
+  }
+}
